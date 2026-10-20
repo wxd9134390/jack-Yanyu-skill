@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花生十三 · 言语理解 一页速查</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --ink2:#4a4a4a; --ink3:#7a7a7a;
+    --line:#dcd8d0; --paper:#fbfaf7; --card:#ffffff;
+    --red:#a8321f; --red-bg:#fdf1ee;
+    --green:#2f6b4f; --green-bg:#eef5f1;
+    --blue:#2b4c7e; --blue-bg:#eef2f8;
+    --amber:#8a6212; --amber-bg:#fdf6e6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Songti SC","Source Han Serif SC","Noto Serif SC",Georgia,"Microsoft YaHei",serif;
+    background:var(--paper); color:var(--ink);
+    line-height:1.7; padding:36px 28px 60px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+  header{border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:26px}
+  h1{font-size:26px;letter-spacing:.02em;font-weight:700}
+  .sub{color:var(--ink3);font-size:12.5px;margin-top:6px;letter-spacing:.04em}
+  h2{font-size:15px;margin:34px 0 14px;letter-spacing:.06em;
+     border-left:4px solid var(--red);padding-left:10px;font-weight:700}
+  h2 span{color:var(--ink3);font-weight:400;font-size:12px;letter-spacing:0;margin-left:8px}
+
+  /* 链条 */
+  .chain{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:8px 0 4px}
+  .step{position:relative;background:var(--card);border:1px solid var(--line);
+        padding:16px 14px 14px;border-right:none}
+  .step:last-child{border-right:1px solid var(--line)}
+  .step::after{content:"→";position:absolute;right:-9px;top:50%;transform:translateY(-50%);
+        background:var(--paper);color:var(--red);font-size:15px;z-index:2;padding:0 2px}
+  .step:last-child::after{display:none}
+  .step .n{font-size:11px;color:var(--red);letter-spacing:.14em;font-weight:700}
+  .step .t{font-size:14.5px;font-weight:700;margin:4px 0 6px}
+  .step .d{font-size:12px;color:var(--ink2);line-height:1.6}
+
+  table{width:100%;border-collapse:collapse;background:var(--card);font-size:12.8px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:#f2efe8;font-weight:700;letter-spacing:.03em;font-size:12.5px}
+  td b{color:var(--red)}
+  .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:2px;
+       background:var(--blue-bg);color:var(--blue);margin-right:5px;letter-spacing:.03em}
+  .tag.r{background:var(--red-bg);color:var(--red)}
+  .tag.g{background:var(--green-bg);color:var(--green)}
+  .tag.a{background:var(--amber-bg);color:var(--amber)}
+
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .box{background:var(--card);border:1px solid var(--line);padding:14px 16px}
+  .box h3{font-size:13px;letter-spacing:.05em;margin-bottom:8px;color:var(--red)}
+  .box ol,.box ul{margin-left:18px;font-size:12.6px;color:var(--ink2)}
+  .box li{margin:3px 0}
+  .quote{font-size:12px;color:var(--ink3);border-left:2px solid var(--line);
+         padding-left:9px;margin-top:10px;font-style:italic}
+
+  .warn{background:var(--red-bg);border:1px solid #edc9c1;padding:12px 16px;
+        font-size:12.6px;color:#6d2416}
+  .warn b{color:var(--red)}
+  footer{margin-top:38px;padding-top:12px;border-top:1px solid var(--line);
+         font-size:11.5px;color:var(--ink3);display:flex;justify-content:space-between}
+  @media print{
+    body{padding:10px;background:#fff}
+    h2{margin-top:18px}
+    .step,.box,table{break-inside:avoid}
+  }
+  @media (max-width:760px){
+    .chain{grid-template-columns:1fr}
+    .step{border-right:1px solid var(--line);border-bottom:none}
+    .step::after{content:"↓";right:auto;left:50%;top:auto;bottom:-11px;transform:translateX(-50%)}
+    .cols{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>言语理解 · 一页速查</h1>
+  <div class="sub">花生十三 2026 系统课蒸馏 ｜ 12 讲 · 21.5 小时 ｜ 一条链，四个口</div>
+</header>
+
+<h2>总纲：一条单向链<span>顺序不可倒置</span></h2>
+<div class="chain">
+  <div class="step">
+    <div class="n">STEP 1</div>
+    <div class="t">判类</div>
+    <div class="d">说理 / 科普 / 新闻<br>按「作者想干什么」分，不按题材分</div>
+  </div>
+  <div class="step">
+    <div class="n">STEP 2</div>
+    <div class="t">定结构</div>
+    <div class="d">前对策·后对策 ｜ 总分·分总·并列 ｜ 背景+新</div>
+  </div>
+  <div class="step">
+    <div class="n">STEP 3</div>
+    <div class="t">定关注点</div>
+    <div class="d">盯<b>一句</b>（说理）／盯<b>一组词</b>（科普）／盯<b>一个字</b>（新闻）</div>
+  </div>
+  <div class="step">
+    <div class="n">STEP 4</div>
+    <div class="t">定选项</div>
+    <div class="d">正确项特征 + 四类可命名的错误项</div>
+  </div>
+</div>
+<div class="quote">「文段的内容差异决定了它常见的行文结构，行文结构决定了它的关键信息在哪儿……关键信息的不同决定了选项如何设置。」——第03讲 37:33</div>
+
+<h2>一、三型对照<span>判类错，后面全错</span></h2>
+<table>
+  <tr><th style="width:15%">类型</th><th style="width:24%">作者在干什么</th><th style="width:26%">常见结构</th><th style="width:17%">盯什么</th><th>头号错项</th></tr>
+  <tr><td><b>说理类</b></td><td>让你认同观点，或照着做法去做</td><td>前对策（开门见山）／后对策（娓娓道来）</td><td>主旨句 → 切<b>核心做法</b></td><td>客观表达、拼好句、无做法</td></tr>
+  <tr><td><b>科普类</b></td><td>告诉你这是什么东西</td><td>总分／分总／并列·大并列（＋转折·背景+正文·设问+回答·由大引小）</td><td>高频词 + 合并同类项</td><td><b>片面</b></td></tr>
+  <tr><td><b>新闻类</b></td><td>报一件刚发生的事</td><td>背景+新 ／ 新+分析 ／ 过去不行→现在行</td><td>那个「新」</td><td>丢「新」、专名被改写</td></tr>
+</table>
+
+<h2>二、说理类：切那一刀<span>找到对策句只是走了一半</span></h2>
+<div class="cols">
+  <div class="box">
+    <h3>一句拆三层</h3>
+    <ol>
+      <li><b>主体</b>：说给谁的（职业院校 / 保险业 / 现代都市）</li>
+      <li><b>目标</b>：要解决什么（想考上公务员）</li>
+      <li><b>核心做法</b>：具体怎么干（努力 / 引入律师团队 / 统一规则）</li>
+    </ol>
+    <div class="quote">选项必须复现「核心做法」。只有目标的太虚——「要考上公务员」谁都写得出来。</div>
+    <div class="quote">次序：先比有没有做法，再比主体对不对。缺主体但抓住做法，通常更强。</div>
+  </div>
+  <div class="box">
+    <h3>找对策的五条通道</h3>
+    <ul>
+      <li><span class="tag">祈使</span>应该·需要·必须·不妨</li>
+      <li><span class="tag r">禁止</span>不能·禁止·要避免·如果…就</li>
+      <li><span class="tag">逻辑</span>只有…才（「只有」后为重点）·必须…否则</li>
+      <li><span class="tag">必要</span>基础·关键·前提·离不开·必不可少</li>
+      <li><span class="tag a">语义</span>日益成为…自觉选择·必经之路·重要议题</li>
+    </ul>
+    <div class="quote">禁止型与语义型最易漏。漏了会把说理判成科普，然后去追「概括全面」，方向就错了。</div>
+    <div class="quote">统一译成：<b>想要 X，需要 Y</b>。选项也照此翻译再比。</div>
+  </div>
+</div>
+
+<h2>三、科普类：抓全不抓句<span>与说理类正好相反</span></h2>
+<div class="cols">
+  <div class="box">
+    <h3>四步归并</h3>
+    <ol>
+      <li>有总起/总结句 → 直接取「总」</li>
+      <li>没有 → 数分论点，找共有高频词</li>
+      <li>合并同类项（三句讲可感知·可复制·可推广 → 「可推广性」）</li>
+      <li>给出上位词——<b>可以不用原文原词</b></li>
+    </ol>
+  </div>
+  <div class="box">
+    <h3>四大类：可反着用</h3>
+    <p style="font-size:12.6px;color:var(--ink2)">原因 · 具体 · 历程 · 区别比较联系。</p>
+    <p style="font-size:12.6px;color:var(--ink2);margin-top:6px">看到「……的原因」→ 回查因果/果因结构；「……知多少」→ 要求能列 1·2·3；「A与B」→ 要求双主语、篇幅相当。</p>
+    <div class="quote">它们是正确项的准入门槛，<b>不是错误类型</b>。当错误类型排除会错杀。</div>
+  </div>
+</div>
+
+<h2>四、选项：可以倒着推<span>错项可穷举</span></h2>
+<table>
+  <tr><th style="width:16%">错项</th><th style="width:44%">长相</th><th>为什么错 / 何时是答案</th></tr>
+  <tr><td><b>出处有误</b></td><td>词从分析、论据、例子、背景、转折前、「因此」前摘来</td><td>位置不对，再准也不选</td></tr>
+  <tr><td><b>客观表达</b></td><td>只陈述现象，无态度无做法</td><td>说理类是硬伤；<span class="tag g">科普类反而是正确答案形态</span></td></tr>
+  <tr><td><b>拼好句</b></td><td>各句各摘两词，拼成「看似全面」一项</td><td>说理不求全面，这种最惑人</td></tr>
+  <tr><td><b>无核心做法</b></td><td>有对策的样子，停在目标或空话</td><td>没有可落地的动作</td></tr>
+  <tr><td><b>对策的对策</b></td><td>在原文对策上再推一步（「要加强」→「要向深度广度拓展」）</td><td>越界，通常错</td></tr>
+  <tr><td><b>片面</b></td><td>只覆盖某个分论</td><td>科普头号死因；<span class="tag g">说理类可宽容</span></td></tr>
+</table>
+<div class="cols" style="margin-top:14px">
+  <div class="box">
+    <h3>逆推法</h3>
+    <p style="font-size:12.6px;color:var(--ink2)">假设某项是答案 → 反推「原文该写成什么样」→ 回看原文是不是那样。示范：若主旨是「人体唾液腺知多少」，原文就得把唾液腺知识全介绍一遍——「你自己都不会那么写」，排除。</p>
+  </div>
+  <div class="box">
+    <h3>双标</h3>
+    <p style="font-size:12.6px;color:var(--ink2)">对「像答案」的选项主动替它找理由，对「不像答案」的严格挑刺。<b>但一旦另一项也抓住核心做法，宽容立即收回。</b>这不是道德问题，是技术动作。</p>
+  </div>
+</div>
+
+<h2>五、六题型＝同一链的六个出口</h2>
+<table>
+  <tr><th style="width:15%">题型</th><th style="width:30%">它其实在问什么</th><th>多出来的一步</th></tr>
+  <tr><td>中心理解</td><td>主旨句是哪句</td><td>就是链条本身</td></tr>
+  <tr><td>标题拟定</td><td>主旨怎么改写成标题</td><td>加文体调性：说理<b>力量感</b>（后果说到最重）· 科普<b>主体+主题</b>（可用修辞、双引号）· 新闻<b>点名新举措</b></td></tr>
+  <tr><td>下文推断</td><td>被切开的两段怎么接回去</td><td>七结构：尾句新内容／提问题／宏观→具体／总分写分2／过去→现在／转折／原文自带顺序；四条硬排除：已讲过·跑题·跳跃·已解决</td></tr>
+  <tr><td>语句填入</td><td>缺的那块拼图是什么</td><td><b>给二求一</b>（问题·对策·论证给两块补第三块）＋四抓手：动宾搭配·关联词·指代·句式</td></tr>
+  <tr><td>语句排序</td><td>每句回哪个位置</td><td>先套结构定区位，再用共现词·指代·首尾捆绑；<b>与「先找首句」次序相反</b></td></tr>
+  <tr><td>细节判断</td><td>每一项单独对不对</td><td>十秒切块建地图 → 逐项定位 → 七类偷换 → 瑕疵题择优</td></tr>
+</table>
+
+<h2>六、逻辑填空：同一条链的微观版</h2>
+<div class="cols">
+  <div class="box">
+    <h3>六条对应线索</h3>
+    <ol>
+      <li><b>成语拆分</b>——成语是把前文白话「再说一遍」，可逐语素还原：「避实」对绕弯路，「就虚」对打薄弱；「亡羊」对既成事实，「补牢」对及时奏效</li>
+      <li><b>因果</b>——给因选果，给果溯因</li>
+      <li><b>比喻</b>——喻体必须同处一个场景</li>
+      <li><b>语义关联</b>——并列多近义·转折必反义·递进则加深，可跳着对应（A对C）</li>
+      <li><b>褒贬</b>——由作者态度定调，不由对象定调</li>
+      <li><b>用词一致</b>——同字＋语义＋结构三关齐过</li>
+    </ol>
+  </div>
+  <div class="box">
+    <h3>两条铁律 + 五维辨析</h3>
+    <ul>
+      <li>多空题<b>不按 1→2→3</b>，先锁最确定的一空</li>
+      <li><b>语义重复不是病，字词重复才是病</b>（「令人贻笑大方」「忍俊不禁地笑了」才错）</li>
+    </ul>
+    <p style="font-size:12.6px;color:var(--ink2);margin-top:8px">五维：对象 · 侧重 · 程度 · 结构 · 语境</p>
+    <p style="font-size:12.4px;color:var(--ink3);margin-top:4px">因材施教（多个孩子差异化）vs 因势利导（一个孩子的特点）｜量入为出（按能力定支出）vs 精打细算（资源少时算细）｜卷土重来（失败方蓄力，轻）vs 死灰复燃（刚要灭又活，重）</p>
+  </div>
+</div>
+
+<h2>七、最容易踩的坑<span>背下来，比背方法更救命</span></h2>
+<div class="warn">
+  <b>1</b> 跳过判类直接找重点句　<b>2</b> 追求全面，选中拼好句　<b>3</b> 选只有目标、无做法的项　<b>4</b> 见「没主体」就排除正确项　<b>5</b> 弱转折只取转折之前　<b>6</b> 科普类因「非原文词」排除正确项　<b>7</b> 由大引小的小段一律当例子　<b>8</b> 标题放大范围　<b>9</b> 把四大类当错误类型　<b>10</b> 新闻把专名换成上位概念　<b>11</b> 一把尺子量所有题　<b>12</b> 细节题「无中生有」一刀切
+</div>
+
+<h2>八、它什么时候会失效<span>老师自己承认的软肋</span></h2>
+<div class="cols">
+  <div class="box">
+    <ul>
+      <li>强假设「每题都有唯一主旨句」——科普并列常没有，「全面到什么程度」仍靠语感</li>
+      <li>判类一错，误差被<b>放大</b>而非收敛</li>
+      <li>「宽泛对策优先」与「具体优先」会冲突，最终靠「谁更致命」裁决</li>
+    </ul>
+  </div>
+  <div class="box">
+    <ul>
+      <li>逻辑填空卡在词汇量：方法解决「对应」，解决不了「不认识」</li>
+      <li>存在两项都合理、靠出题人偏好定答案的题</li>
+      <li>老师原话：「言语它就是个主观的事儿，我们尽量用规则让它变得客观。」</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <span>蒸馏自：12 个视频（约 21.5 小时）＋ 10 份随堂讲义（约 15 万字）</span>
+  <span>能力卡 15 张 ｜ 判据均可追溯到讲次与时间戳</span>
+</footer>
+
+</div>
+</body>
+</html>
