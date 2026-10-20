@@ -1,0 +1,45 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "references\\capabilities\\biaoti-niding.md": "de7fbc7afdddc22103a65eb922865eec28cd70e7f1ac029a0638f66287d6c058",
+    "references\\capabilities\\ciyi-bianxi.md": "677bf81218bd496d5401243239fc15ccd6827eafcf8637b95fb9cb2422f75c28",
+    "references\\capabilities\\duice-hexin.md": "24d82b17cc1ef696555d40a60437e8aadd2b6a99fe791fd99aff55c3dc60e646",
+    "references\\capabilities\\duice-xinhao.md": "daab03913d7ec6f5ef0942c52691b569ca593f8aa4d42bcdb6203ef25f35dcc7",
+    "references\\capabilities\\kepu-gaikuo.md": "bbfc71330a8b743ded829053c7adffdfd1f28279a21f55d4792be154e44982ee",
+    "references\\capabilities\\kepu-sidalei.md": "ffffa4210a15eefbf2a313c5cc0c611a06376fa5314ac26e2915f79396d8e5e0",
+    "references\\capabilities\\luoji-duiying.md": "f09abeb013ebf950005027805f04838d90fb386ac226e3fd91fdaf5e33b53172",
+    "references\\capabilities\\panduan-leixing.md": "bbcfe53c92d63c58062533a981cfc7f2d0b618c93edfcf3f3cd4a756ebbd13f4",
+    "references\\capabilities\\shuoli-zhuzhi.md": "dae7b5fb71a5ef9c5c1c1cffb88821e36392c7f825407bbd324ab69fc17b6221",
+    "references\\capabilities\\xiawen-tuiduan.md": "bd25409b269a7c718be2cf1c7ab55aeaf6dc7723e730963f302a1831c28d1e3b",
+    "references\\capabilities\\xijie-panduan.md": "6fa34d385624141fd90228d481b11f64ce25540591bb470633a51f639205ee6f",
+    "references\\capabilities\\xinwen-xin.md": "ad05edd0177b9d861c4ca42b33ff4eb77525698d2f4f9d144db20afb93e9dbba",
+    "references\\capabilities\\xuanxiang-paichu.md": "300f1121614aecb82b8709ee50195914855fbbad737e13d2c3a9fb4873dbca73",
+    "references\\capabilities\\yuju-paixu.md": "9b40cdd6423d849a2f7407b7df9f52994ef55145c2d6af35f1bad5017a6c25c2",
+    "references\\capabilities\\yuju-tianru.md": "9743813bc70af1afb937d928f2d5b81907e3147dd77333e23ea151d208b5dbac",
+    "references\\capability-index.md": "641883d6258ac196029481360a283067a7e35797ca6d75651c27fe37fb88ce29",
+    "references\\cheatsheet.md": "f210e512ffe45d40835b30eca87f15c68af843de8cbb583a374ba884c673f10a",
+    "references\\glossary.md": "8bf6030d430b5baaca7fc9e34da64db7f2f019cfd3cd380f5c4e0ad967975374",
+    "references\\overview.md": "bc14ad749dd0071e3ac4ac0247a0dedd253102ae4c0b12aad31b717f8226888e",
+    "SKILL.md": "1980a1e190bea3c99ca9946d47c62f1313d8eec5c91591f83f8030394d79d139"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.huasheng13-yanyu",
+  "bundle_sha256": "d5a9c09f7f7a5f052b2bc6c6fad1582e370f43dcd6d4b73d10d14f9f362a50d2",
+  "variant": "single",
+  "run_id": "run-20261020-194004-5f467b",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 0,
+    "capability_count": 15,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 0 个晋级 Skill，共 1 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}
